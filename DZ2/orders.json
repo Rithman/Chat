@@ -1,0 +1,19 @@
+{
+    "orders": [
+        {
+            "item": "Bike"
+        },
+        {
+            "quantity": 1
+        },
+        {
+            "price": 20000
+        },
+        {
+            "buyer": "Wick J."
+        },
+        {
+            "date": "13.10.2022"
+        }
+    ]
+}
