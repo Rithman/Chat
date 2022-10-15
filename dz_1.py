@@ -1,6 +1,8 @@
 import subprocess
 import locale
 import os
+from chardet.universaldetector import UniversalDetector
+import chardet
 
 # 1
 words = ["разработка", "сокет", "декоратор"]
@@ -21,6 +23,13 @@ print(*(f"{word}: {type(word)}" for word in words))
 
 # 3
 # "класс" и "функция" невозможно записать в байтовом типе, т.к. они содержат символы, не входящие в ASCII
+words_3 = ["attribute", "класс", "функция", "type"]
+for word in words_3:
+    try:
+        print(bytes(word, encoding="ASCII"))
+    except:
+        print(
+            f"Can't encode word {word}. Only ASCII characters are allowed in bytes")
 
 # 4
 words2 = ["разработка", "администрирование", "protocol", "standart"]
@@ -33,16 +42,30 @@ print(words2_str)
 # 5
 args = ['ping', 'yandex.ru', 'youtube.com']
 ping1 = subprocess.Popen(args[:2], stdout=subprocess.PIPE)
-print(*(line.decode('cp866') for line in ping1.stdout))
+for line in ping1.stdout:
+    result = chardet.detect(line)
+    print(line.decode(result['encoding']).encode('utf-8').decode('utf-8'))
 
 ping2 = subprocess.Popen((args[0], args[2]), stdout=subprocess.PIPE)
-print(*(line.decode('cp866') for line in ping2.stdout))
+for line in ping2.stdout:
+    result = chardet.detect(line)
+    print(line.decode(result['encoding']).encode('utf-8').decode('utf-8'))
+
 
 # 6
 coding = locale.getpreferredencoding()
 print(coding)
 
 # не хочет просто так открывать файл в том же каталоге
-with open(os.getcwd()+'\\chat\\test_file.txt', 'r', encoding='utf-8') as f:
+detector = UniversalDetector()
+with open(os.getcwd()+'\\chat\\test_file.txt', 'rb') as f:
+    for line in f:
+        detector.feed(line)
+        if detector.done:
+            break
+    detector.close()
+print(detector.result)
+
+with open(os.getcwd()+'\\chat\\test_file.txt', 'r', encoding=detector.result['encoding']) as f:
     for el in f:
         print(el, end="")
