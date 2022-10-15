@@ -1,19 +1,18 @@
 {
-    "orders": [
-        {
-            "item": "Bike"
-        },
-        {
-            "quantity": 1
-        },
-        {
-            "price": 20000
-        },
-        {
-            "buyer": "Wick J."
-        },
-        {
-            "date": "13.10.2022"
-        }
-    ]
+  "orders": [
+    {
+      "item": "Bike",
+      "quantity": 1,
+      "price": 20000,
+      "buyer": "Wick J.",
+      "date": "13.10.2022"
+    },
+    {
+      "item": "Мотоцикл",
+      "quantity": 1,
+      "price": 50000,
+      "buyer": "Иванов. А.В",
+      "date": "13.10.2022"
+    }
+  ]
 }
