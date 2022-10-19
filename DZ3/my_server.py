@@ -1,41 +1,45 @@
 from socket import *
 import sys
 import json
-import datetime
 
-s_address = "0.0.0.0"
-s_port = 7777
 
-if "-a" in sys.argv:
+
+def proccess_client_message(message):
+    if "action" in message and message["action"] == "presence" and "time" in message \
+        and "user" in message and message["user"]["account_name"] == "User-001":
+        return json.dumps({"response": 200}).encode("utf-8")
+    return json.dumps({"response": 400, "error": "bad_request"}).encode("utf-8")
+
+
+def main():
+    s_address = "0.0.0.0"
+    s_port = 7777
+
     try:
-        s_address = sys.argv[sys.argv.index("-a") + 1]
-    except:
-        ValueError("Invalid address")
+        if "-a" in sys.argv:
+            s_address = sys.argv[sys.argv.index("-a") + 1]
+        if "-p" in sys.argv:
+            s_port = int(sys.argv[sys.argv.index("-p") + 1])
+        if 1024 > s_port > 65535:
+            raise ValueError
+    except IndexError:
+        print('After "-p" a valid port number must follow.')
+    except ValueError:
+        print('Port number must be an integer in 1024-65535 range')
+    sys.exit(1)
 
-if "-p" in sys.argv:
-    try:
-        s_port = int(sys.argv[sys.argv.index("-p") + 1])
-    except:
-        ValueError("Invalid port")
 
+    s = socket(AF_INET, SOCK_STREAM)
+    s.bind((s_address, s_port))
+    s.listen(5)
 
-s = socket(AF_INET, SOCK_STREAM)
-s.bind((s_address, s_port))
-s.listen(5)
+    while True:
+        client, addr = s.accept()
+        client_message = json.loads(client.recv(100000).decode("utf-8"))
+        print(f"Messsage recieved: {str(client_message)}")
+        message_to_client = proccess_client_message(client_message)
+        client.send(message_to_client)
+        client.close
 
-while True:
-    client, addr = s.accept()
-    data = json.loads(client.recv(100000).decode("utf-8"))
-    client_name = data["user"]["account_name"]
-    client_status = data["user"]["status"]
-    print(f"Messsage recieved: {str(data)}")
-    response_data = {
-        "server_address": s_address,
-        "server_port": s_port,
-        "client_name": client_name,
-        "client_status": client_status,
-        "time": str(datetime.datetime.now())
-    }
-    msg_to_client = json.dumps(response_data).encode("utf-8")
-    client.send(msg_to_client)
-    client.close
+if __name__ == "__main__":
+    main()
