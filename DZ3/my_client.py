@@ -3,27 +3,30 @@ import datetime
 import json
 import sys
 
+
 def create_presence(account_name="User-001"):
     presence_message = json.dumps(
         {
-        "action": "presence",
-        "time": str(datetime.datetime.now()),
-        "type": "status",
-        "user":
+            "action": "presence",
+            "time": str(datetime.datetime.now()),
+            "type": "status",
+            "user":
                 {
                 "account_name": account_name,
                 "status": "Я онлайн!"
-                }
+            }
         }).encode("utf-8")
     return presence_message
 
+
 def proccess_response(message):
-    
+
     message = json.loads(message.decode("utf-8"))
     if "response" in message:
         if message["response"] == 200:
             return "200: OK"
         return f"400: {message['error']}"
+
 
 def main():
     try:
@@ -48,6 +51,7 @@ def main():
     except (ValueError, json.JSONDecodeError):
         print("Can't decode server message")
     s.close
+
 
 if __name__ == "__main__":
     main()
