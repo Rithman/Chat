@@ -3,10 +3,9 @@ import sys
 import json
 
 
-
 def proccess_client_message(message):
     if "action" in message and message["action"] == "presence" and "time" in message \
-        and "user" in message and message["user"]["account_name"] == "User-001":
+            and "user" in message and message["user"]["account_name"] == "User-001":
         return json.dumps({"response": 200}).encode("utf-8")
     return json.dumps({"response": 400, "error": "bad_request"}).encode("utf-8")
 
@@ -26,8 +25,7 @@ def main():
         print('After "-p" a valid port number must follow.')
     except ValueError:
         print('Port number must be an integer in 1024-65535 range')
-    sys.exit(1)
-
+        sys.exit(1)
 
     s = socket(AF_INET, SOCK_STREAM)
     s.bind((s_address, s_port))
@@ -40,6 +38,7 @@ def main():
         message_to_client = proccess_client_message(client_message)
         client.send(message_to_client)
         client.close
+
 
 if __name__ == "__main__":
     main()
