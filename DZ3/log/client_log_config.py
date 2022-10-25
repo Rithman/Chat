@@ -4,7 +4,7 @@ name = __name__
 
 format = logging.Formatter("%(asctime)s %(levelname)-6s %(name)s %(message)s")
 
-client_hand = logging.FileHandler('.\log\client.log')
+client_hand = logging.FileHandler('.\log\log_data\client.log')
 client_hand.setFormatter(format)
 
 client_log = logging.getLogger("my_client")

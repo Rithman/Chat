@@ -6,7 +6,7 @@ name = __name__
 format = logging.Formatter("%(asctime)s %(levelname)-6s %(name)s %(message)s")
 
 server_hand = TimedRotatingFileHandler(
-    '.\log\server.log', when="D", interval=1)
+    '.\log\log_data\server.log', when="D", interval=1)
 server_hand.setFormatter(format)
 
 server_log = logging.getLogger("my_server")
