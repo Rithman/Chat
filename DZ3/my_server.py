@@ -3,11 +3,12 @@ import sys
 import json
 import logging
 import log.server_log_config
-
+from log.server_log_config import FuncCallLogger
 
 logger = logging.getLogger("my_server")
 
 
+@FuncCallLogger()
 def proccess_client_message(message):
     if "action" in message and message["action"] == "presence" and "time" in message \
             and "user" in message and message["user"]["account_name"] == "User-001":

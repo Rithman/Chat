@@ -4,11 +4,12 @@ import json
 import sys
 import logging
 import log.client_log_config
-
+from log.client_log_config import FuncCallLogger
 
 logger = logging.getLogger("my_client")
 
 
+@FuncCallLogger()
 def create_presence(account_name="User-001"):
     presence_message = json.dumps(
         {
@@ -23,9 +24,8 @@ def create_presence(account_name="User-001"):
         }).encode("utf-8")
     return presence_message
 
-
+@FuncCallLogger()
 def proccess_response(message):
-
     message = json.loads(message.decode("utf-8"))
     if "response" in message:
         if message["response"] == 200:
@@ -35,6 +35,7 @@ def proccess_response(message):
 
 def main():
     logger.info("App starts")
+
     try:
         s_address = sys.argv[1]
         s_port = int(sys.argv[2])
@@ -55,6 +56,7 @@ def main():
     logger.info(
         f"Message {create_presence().decode('utf-8')} sent to {s_address} {s_port}")
     server_response = s.recv(100000)
+
     try:
         answer = proccess_response(server_response)
         print(answer)
