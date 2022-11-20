@@ -1,6 +1,5 @@
 from socket import *
 import time
-import json
 import sys
 import logging
 import argparse
