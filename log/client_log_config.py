@@ -1,22 +1,22 @@
 import logging
 import datetime
 import inspect
-from functools import wraps
+import os
+import pathlib
 
 
 name = __name__
 format = logging.Formatter("%(asctime)s %(levelname)-6s %(name)s %(message)s")
 client_hand = logging.FileHandler(
-    '.\log\log_data\client.log', encoding="utf-8")
+    f"{pathlib.Path(__file__).parent.resolve()}\log_data\client.log")
 client_hand.setFormatter(format)
 client_log = logging.getLogger("my_client")
-client_log.setLevel(logging.INFO)
+client_log.setLevel(logging.DEBUG)
 client_log.addHandler(client_hand)
 
 
 class FuncCallLogger:
     def __call__(self, func):
-        @wraps(func)
         def decorated(*args, **kwargs):
             res = func(*args, **kwargs)
             client_log.info(
