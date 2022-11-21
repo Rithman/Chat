@@ -3152,3 +3152,711 @@ n proccess_client_message()
 2022-11-19 18:58:33,293 INFO   my_client Function get_message() was called from function listen()
 2022-11-19 18:58:33,293 INFO   my_client Message recieved from U1:dfgывпвп
 2022-11-19 18:58:33,294 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 14:58:17,633 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 14:58:17,664 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 14:59:44,385 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 14:59:44,400 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:01:15,396 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:01:15,411 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:04:00,259 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:04:00,274 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:04:04,395 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:04:04,411 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:08:12,946 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:08:12,961 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:08:49,230 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:08:49,246 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:16:07,767 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:16:07,778 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:16:49,702 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:16:49,712 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:16:49,712 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:16:49,713 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669025809.7137363, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:16:49,714 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:16:49,714 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:16:50,222 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:16:50,222 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:16:50,222 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:16:50,222 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:16:50,222 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:16:50,222 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:16:52,836 DEBUG  my_client Message created: {'action': 'message', 'time': 1669025812.8369083, 'account_name': 'U1', 'destination': None, 'message_text': 'dsgs'}
+2022-11-21 15:16:52,842 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:16:52,843 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:16:53,265 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:16:53,265 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:16:53,265 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:16:53,265 INFO   my_client Message recieved from U1:dsgs
+2022-11-21 15:16:53,282 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:16:55,617 ERROR  my_client Connection to the server 127.0.0.1 was lost
+2022-11-21 15:18:02,310 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:18:02,310 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:18:02,310 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:18:02,310 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669025882.3100002, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:18:02,310 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:18:02,310 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:18:02,825 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:18:02,825 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:18:02,825 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:18:02,825 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:18:02,825 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:18:02,825 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:18:13,262 DEBUG  my_client Message created: {'action': 'message', 'time': 1669025893.2620242, 'account_name': 'U1', 'destination': None, 'message_text': 'Jsd'}
+2022-11-21 15:18:13,262 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:18:13,262 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:18:13,511 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:18:13,511 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:18:13,511 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:18:13,511 INFO   my_client Message recieved from U1:Jsd
+2022-11-21 15:18:13,527 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:25:58,610 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:25:58,626 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:25:58,626 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:25:58,626 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026358.6262748, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:25:58,626 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:25:58,626 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:25:59,126 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:25:59,126 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:25:59,126 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:25:59,126 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:25:59,126 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:25:59,126 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:26:07,593 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:26:07,593 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:26:07,593 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:26:07,593 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026367.5936291, 'type': 'status', 'user': {'account_name': 'U2', 'status': 'Я онлайн!'}}
+2022-11-21 15:26:07,593 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:26:07,593 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:26:08,093 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:26:08,093 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:26:08,093 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:26:08,093 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:26:08,093 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:26:08,093 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:26:09,398 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026369.398857, 'account_name': 'U2', 'destination': None, 'message_text': 'sdg'}
+2022-11-21 15:26:09,398 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:26:09,398 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:26:09,633 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:26:09,633 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:26:09,633 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:26:09,633 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:26:09,633 INFO   my_client Message recieved from U2:sdg
+2022-11-21 15:26:09,648 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:26:09,648 INFO   my_client Message recieved from U2:sdg
+2022-11-21 15:26:09,648 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:26:09,648 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:26:33,631 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026393.6311805, 'account_name': 'U1', 'destination': None, 'message_text': 'DD'}
+2022-11-21 15:26:33,631 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:26:33,631 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:26:33,740 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:26:33,740 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:26:33,740 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:26:33,740 INFO   my_client Message recieved from U1:DD
+2022-11-21 15:26:33,740 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:26:33,740 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:26:33,740 INFO   my_client Message recieved from U1:DD
+2022-11-21 15:26:33,755 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:26:33,755 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:26:41,503 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026401.503801, 'account_name': 'U1', 'destination': 'U2', 'message_text': 'sedgf'}
+2022-11-21 15:26:41,503 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:26:41,519 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:26:41,956 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:26:41,956 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:26:41,956 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:26:41,956 INFO   my_client Message recieved from U1:sedgf
+2022-11-21 15:26:41,972 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:27:07,572 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:27:07,588 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:27:07,588 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:27:07,588 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026427.5884404, 'type': 'status', 'user': {'account_name': 'Uq', 'status': 'Я онлайн!'}}
+2022-11-21 15:27:07,588 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:27:07,588 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:27:08,088 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:08,088 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:08,088 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:27:08,088 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:27:08,088 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:27:08,088 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:27:18,331 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:27:18,347 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:27:18,347 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:27:18,347 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026438.34717, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:27:18,347 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:27:18,347 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:27:18,853 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:18,858 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:18,858 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:27:18,859 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:27:18,860 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:27:18,861 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:27:28,687 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026448.6879814, 'account_name': 'U1', 'destination': None, 'message_text': 'dgs'}
+2022-11-21 15:27:28,687 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:27:28,687 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:27:29,003 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:29,003 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:27:29,003 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:27:29,003 INFO   my_client Message recieved from U1:dgs
+2022-11-21 15:27:29,018 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:27:53,161 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:27:53,177 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:27:53,177 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:27:53,177 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026473.1772494, 'type': 'status', 'user': {'account_name': '/q', 'status': 'Я онлайн!'}}
+2022-11-21 15:27:53,177 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:27:53,177 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:27:53,687 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:53,687 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:53,687 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:27:53,687 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:27:53,687 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:27:53,687 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:27:56,342 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:27:56,358 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:27:56,358 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:27:56,358 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026476.3583624, 'type': 'status', 'user': {'account_name': '', 'status': 'Я онлайн!'}}
+2022-11-21 15:27:56,358 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:27:56,358 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:27:56,867 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:56,867 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:27:56,867 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:27:56,867 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:27:56,867 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:27:56,867 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:28:10,721 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:28:10,721 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:28:10,721 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:28:10,721 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026490.721391, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:28:10,721 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:28:10,721 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:28:11,227 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:28:11,227 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:28:11,227 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:28:11,227 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:28:11,227 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:28:11,227 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:30:15,018 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026615.0182774, 'account_name': 'U1', 'destination': None, 'message_text': 'gsd'}
+2022-11-21 15:30:15,033 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:30:15,033 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:30:15,158 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:30:15,158 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:30:15,158 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:30:15,158 INFO   my_client Message recieved from U1:gsd
+2022-11-21 15:30:15,174 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:30:18,770 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:30:18,770 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:30:18,770 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:30:18,770 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026618.7701893, 'type': 'status', 'user': {'account_name': 'egfqw', 'status': 'Я онлайн!'}}
+2022-11-21 15:30:18,770 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:30:18,770 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:30:19,279 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:30:19,279 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:30:19,279 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:30:19,279 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:30:19,279 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:30:19,279 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:30:20,987 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:30:20,987 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:30:20,987 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:30:20,987 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026620.987387, 'type': 'status', 'user': {'account_name': 'xdg', 'status': 'Я онлайн!'}}
+2022-11-21 15:30:20,987 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:30:20,987 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:30:21,501 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:30:21,501 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:30:21,501 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:30:21,501 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:30:21,501 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:30:21,501 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:32:16,158 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:32:16,162 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:32:16,162 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:32:16,162 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026736.1629236, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:32:16,162 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:32:16,162 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:32:16,677 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:32:16,677 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:32:16,677 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:32:16,677 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:32:16,677 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:32:16,677 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:32:18,804 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:32:18,804 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:32:18,804 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:32:18,820 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026738.8204122, 'type': 'status', 'user': {'account_name': 'U2', 'status': 'Я онлайн!'}}
+2022-11-21 15:32:18,820 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:32:18,820 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:32:19,321 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:32:19,321 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:32:19,321 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:32:19,321 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:32:19,321 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:32:19,321 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:32:21,568 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:32:21,568 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:32:21,568 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:32:21,568 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026741.5682683, 'type': 'status', 'user': {'account_name': 'U3', 'status': 'Я онлайн!'}}
+2022-11-21 15:32:21,568 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:32:21,583 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:32:22,071 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:32:22,071 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:32:22,071 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:32:22,071 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:32:22,071 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:32:22,071 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:32:28,394 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026748.394942, 'account_name': 'U1', 'destination': None, 'message_text': 'sdg'}
+2022-11-21 15:32:28,394 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:32:28,394 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:32:28,660 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:32:28,660 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:32:28,660 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:32:28,660 INFO   my_client Message recieved from U1:sdg
+2022-11-21 15:32:28,660 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:32:28,676 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:32:28,676 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:32:28,676 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:32:28,676 INFO   my_client Message recieved from U1:sdg
+2022-11-21 15:32:28,676 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:32:28,676 INFO   my_client Message recieved from U1:sdg
+2022-11-21 15:32:28,676 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:32:28,676 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:32:35,788 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026755.7888825, 'account_name': 'U1', 'destination': 'U2', 'message_text': 'sdgfs'}
+2022-11-21 15:32:35,788 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:32:35,804 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:32:35,882 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:33:06,174 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:33:06,190 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:33:06,190 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:33:08,241 CRITICAL my_client Connection error: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2022-11-21 15:33:10,180 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:33:10,196 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:33:10,196 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:33:12,231 CRITICAL my_client Connection error: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2022-11-21 15:33:20,601 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:33:20,616 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:33:20,616 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:33:22,666 CRITICAL my_client Connection error: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2022-11-21 15:33:51,313 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:33:51,328 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:33:51,328 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:33:53,375 CRITICAL my_client Connection error: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2022-11-21 15:34:00,869 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:34:00,884 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:34:00,884 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:34:02,920 CRITICAL my_client Connection error: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+2022-11-21 15:35:11,598 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:35:11,598 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:35:11,598 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:35:11,598 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026911.5988948, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:35:11,598 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:35:11,598 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:12,114 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:12,114 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:12,114 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:35:12,114 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:35:12,114 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:35:12,114 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:35:15,694 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:35:15,709 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:35:15,709 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:35:15,709 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026915.7096908, 'type': 'status', 'user': {'account_name': 'U2', 'status': 'Я онлайн!'}}
+2022-11-21 15:35:15,709 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:35:15,709 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:16,217 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:16,221 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:16,222 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:35:16,222 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:35:16,225 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:35:16,225 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:35:20,494 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:35:20,494 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:35:20,494 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:35:20,494 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669026920.4946792, 'type': 'status', 'user': {'account_name': 'U3', 'status': 'Я онлайн!'}}
+2022-11-21 15:35:20,510 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:35:20,510 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:21,025 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:21,025 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:21,025 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:35:21,025 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:35:21,025 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:35:21,025 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:35:22,233 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026922.2330985, 'account_name': 'U3', 'destination': None, 'message_text': 'sdgf'}
+2022-11-21 15:35:22,233 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:35:22,233 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:35:22,545 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:22,545 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:22,545 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:22,545 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:35:22,545 INFO   my_client Message recieved from U3:sdgf
+2022-11-21 15:35:22,560 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:22,560 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:35:22,560 INFO   my_client Message recieved from U3:sdgf
+2022-11-21 15:35:22,560 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:35:22,560 INFO   my_client Message recieved from U3:sdgf
+2022-11-21 15:35:22,560 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:35:22,560 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:35:22,560 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:35:28,542 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026928.542778, 'account_name': 'U3', 'destination': 'U1', 'message_text': 'sdtt'}
+2022-11-21 15:35:28,542 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:35:28,542 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:35:28,714 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:28,714 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:28,714 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:35:28,714 INFO   my_client Message recieved from U3:sdtt
+2022-11-21 15:35:28,730 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:35:33,057 DEBUG  my_client Message created: {'action': 'message', 'time': 1669026933.0576713, 'account_name': 'U3', 'destination': 'U2', 'message_text': 'sdtt'}
+2022-11-21 15:35:33,057 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:35:33,057 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:35:33,338 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:35:33,338 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:35:33,338 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:35:33,338 INFO   my_client Message recieved from U3:sdtt
+2022-11-21 15:35:33,354 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:35:38,696 ERROR  my_client Connection to the server 127.0.0.1 was lost
+2022-11-21 15:35:39,915 ERROR  my_client Connection to the server 127.0.0.1 was lost
+2022-11-21 15:35:40,779 ERROR  my_client Connection to the server 127.0.0.1 was lost
+2022-11-21 15:46:49,456 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:46:49,471 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:46:49,471 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:46:49,471 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669027609.471985, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:46:49,471 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:46:49,471 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:46:49,990 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:46:49,994 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:46:49,995 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:46:49,996 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:46:49,998 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:46:49,998 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:46:53,566 INFO   my_client Function get_username() was called from function <module>()
+2022-11-21 15:46:53,582 INFO   my_client Function arg_parser() was called from function main()
+2022-11-21 15:46:53,582 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:46:53,582 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669027613.5822985, 'type': 'status', 'user': {'account_name': 'U2', 'status': 'Я онлайн!'}}
+2022-11-21 15:46:53,582 INFO   my_client Function create_presence() was called from function main()
+2022-11-21 15:46:53,582 INFO   my_client Function send_message() was called from function main()
+2022-11-21 15:46:54,098 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:46:54,098 INFO   my_client Function get_message() was called from function main()
+2022-11-21 15:46:54,098 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:46:54,098 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:46:54,098 INFO   my_client Function proccess_response() was called from function main()
+2022-11-21 15:46:54,098 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:46:55,184 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027615.1840062, 'account_name': 'U2', 'destination': None, 'message_text': 'ssdg'}
+2022-11-21 15:46:55,184 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:46:55,184 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:46:55,637 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:46:55,637 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:46:55,637 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:46:55,637 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:46:55,637 INFO   my_client Message recieved from U2:ssdg
+2022-11-21 15:46:55,637 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:46:55,637 INFO   my_client Message recieved from U2:ssdg
+2022-11-21 15:46:55,652 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:46:55,652 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:47:03,650 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027623.650421, 'account_name': 'U1', 'destination': 'U2', 'message_text': 'sdfssb'}
+2022-11-21 15:47:03,650 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:47:03,650 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:47:03,853 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:47:03,853 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:47:03,853 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:47:03,853 INFO   my_client Message recieved from U1:sdfssb
+2022-11-21 15:47:03,869 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:17,465 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 15:52:17,480 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 15:52:17,480 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:52:17,480 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669027937.4807432, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:52:17,480 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 15:52:17,480 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:17,983 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:17,988 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:17,988 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:52:17,989 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:52:17,990 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 15:52:17,991 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:52:21,210 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 15:52:21,226 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 15:52:21,226 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:52:21,226 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669027941.226602, 'type': 'status', 'user': {'account_name': 'U2', 'status': 'Я онлайн!'}}
+2022-11-21 15:52:21,226 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 15:52:21,226 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:21,726 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:21,726 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:21,726 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:52:21,726 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:52:21,726 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 15:52:21,726 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:52:23,125 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027943.1252441, 'account_name': 'U2', 'destination': None, 'message_text': 'asdf'}
+2022-11-21 15:52:23,125 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:52:23,125 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:52:23,265 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:23,265 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:23,265 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:23,265 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:23,265 INFO   my_client Message recieved from U2:asdf
+2022-11-21 15:52:23,265 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:23,265 INFO   my_client Message recieved from U2:asdf
+2022-11-21 15:52:23,281 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:23,281 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:30,404 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027950.4043705, 'account_name': 'U1', 'destination': None, 'message_text': 'dfher'}
+2022-11-21 15:52:30,404 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:52:30,404 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:52:30,763 ERROR  my_client Connection to the server 127.0.0.1 was lost
+2022-11-21 15:52:30,919 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:30,919 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:30,919 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:30,919 INFO   my_client Message recieved from U1:dfher
+2022-11-21 15:52:30,919 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:30,919 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:30,919 INFO   my_client Message recieved from U1:dfher
+2022-11-21 15:52:30,935 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:30,935 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:38,404 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027958.4047906, 'account_name': 'U2', 'destination': None, 'message_text': 'sgws'}
+2022-11-21 15:52:38,404 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:52:38,404 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:52:38,607 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:38,607 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:38,607 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:38,607 INFO   my_client Message recieved from U2:sgws
+2022-11-21 15:52:38,607 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:38,607 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:38,607 INFO   my_client Message recieved from U2:sgws
+2022-11-21 15:52:38,623 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:38,623 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:50,129 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027970.1298163, 'account_name': 'U2', 'destination': None, 'message_text': 'dsg'}
+2022-11-21 15:52:50,129 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:52:50,129 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:52:50,379 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:52:50,379 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:50,379 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:50,379 INFO   my_client Message recieved from U2:dsg
+2022-11-21 15:52:50,379 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:52:50,379 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:52:50,395 INFO   my_client Message recieved from U2:dsg
+2022-11-21 15:52:50,395 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:52:50,395 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:09,279 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 15:53:09,279 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 15:53:09,279 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:53:09,279 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669027989.2799833, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:53:09,279 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 15:53:09,279 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:09,788 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:53:09,788 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:53:09,788 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:53:09,788 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:53:09,788 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 15:53:09,788 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:53:11,176 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027991.1760983, 'account_name': 'U1', 'destination': None, 'message_text': 'sdgsgd'}
+2022-11-21 15:53:11,176 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:53:11,176 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:53:11,316 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:53:11,316 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:11,316 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:11,316 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:11,316 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:11,316 INFO   my_client Message recieved from U1:sdgsgd
+2022-11-21 15:53:11,332 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:11,332 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:12,766 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027992.7662256, 'account_name': 'U1', 'destination': None, 'message_text': 'fgtjer'}
+2022-11-21 15:53:12,766 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:53:12,766 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:53:12,844 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:53:12,844 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:12,844 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:12,844 INFO   my_client Message recieved from U1:fgtjer
+2022-11-21 15:53:12,844 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:12,844 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:12,844 INFO   my_client Message recieved from U1:fgtjer
+2022-11-21 15:53:12,859 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:12,859 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:13,941 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027993.9419239, 'account_name': 'U1', 'destination': None, 'message_text': 'vbmx'}
+2022-11-21 15:53:13,941 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:53:13,957 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:53:14,379 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:53:14,379 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:14,379 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:14,379 INFO   my_client Message recieved from U1:vbmx
+2022-11-21 15:53:14,379 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:14,379 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:14,379 INFO   my_client Message recieved from U1:vbmx
+2022-11-21 15:53:14,394 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:14,394 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:15,909 DEBUG  my_client Message created: {'action': 'message', 'time': 1669027995.9090967, 'account_name': 'U2', 'destination': None, 'message_text': 'srm'}
+2022-11-21 15:53:15,909 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:53:15,909 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:53:16,414 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:53:16,414 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:16,414 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:16,414 INFO   my_client Message recieved from U2:srm
+2022-11-21 15:53:16,414 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:53:16,414 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:53:16,414 INFO   my_client Message recieved from U2:srm
+2022-11-21 15:53:16,429 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:16,429 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:53:25,777 DEBUG  my_client Message created: {'action': 'message', 'time': 1669028005.7770665, 'account_name': 'U2', 'destination': 'U1', 'message_text': 'sdgtw3#'}
+2022-11-21 15:53:25,777 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:53:25,777 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:53:26,125 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:21,633 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 15:56:21,649 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 15:56:21,649 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:56:21,649 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669028181.6495, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 15:56:21,649 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 15:56:21,649 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:22,154 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:22,154 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:22,154 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:56:22,154 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:56:22,154 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 15:56:22,154 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:56:29,473 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 15:56:29,488 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 15:56:29,488 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 15:56:29,488 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669028189.4887753, 'type': 'status', 'user': {'account_name': 'U2', 'status': 'Я онлайн!'}}
+2022-11-21 15:56:29,488 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 15:56:29,488 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:29,988 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:29,988 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:29,988 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 15:56:29,988 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 15:56:29,988 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 15:56:29,988 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 15:56:30,934 DEBUG  my_client Message created: {'action': 'message', 'time': 1669028190.9341438, 'account_name': 'U2', 'destination': None, 'message_text': 'sdgwsd'}
+2022-11-21 15:56:30,934 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:56:30,934 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:56:31,012 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:31,012 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:31,012 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:31,012 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:56:31,012 INFO   my_client Message recieved from U2:sdgwsd
+2022-11-21 15:56:31,012 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:56:31,027 INFO   my_client Message recieved from U2:sdgwsd
+2022-11-21 15:56:31,027 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:56:31,027 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:56:34,917 DEBUG  my_client Message created: {'action': 'message', 'time': 1669028194.9172277, 'account_name': 'U2', 'destination': None, 'message_text': 'niju'}
+2022-11-21 15:56:34,917 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:56:34,917 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:56:35,104 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:35,104 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:35,104 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:56:35,104 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:35,104 INFO   my_client Message recieved from U2:niju
+2022-11-21 15:56:35,104 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:56:35,104 INFO   my_client Message recieved from U2:niju
+2022-11-21 15:56:35,120 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:56:35,120 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:56:39,316 DEBUG  my_client Message created: {'action': 'message', 'time': 1669028199.3167586, 'account_name': 'U1', 'destination': None, 'message_text': 'iuy'}
+2022-11-21 15:56:39,316 INFO   my_client Function create_message() was called from function send()
+2022-11-21 15:56:39,316 INFO   my_client Function send_message() was called from function send()
+2022-11-21 15:56:39,707 INFO   my_client Function get_message() was called from function start()
+2022-11-21 15:56:39,707 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:39,707 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:56:39,707 INFO   my_client Message recieved from U1:iuy
+2022-11-21 15:56:39,707 INFO   my_client Function send_message() was called from function start()
+2022-11-21 15:56:39,707 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 15:56:39,707 INFO   my_client Message recieved from U1:iuy
+2022-11-21 15:56:39,722 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 15:56:39,722 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 16:00:24,688 ERROR  my_client Connection to the server 127.0.0.1 was lost
+2022-11-21 18:44:34,442 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 18:44:34,450 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 18:44:34,450 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 18:44:34,451 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669038274.451361, 'type': 'status', 'user': {'account_name': 'U1', 'status': 'Я онлайн!'}}
+2022-11-21 18:44:34,451 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 18:44:34,452 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:34,952 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:34,952 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:34,952 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 18:44:34,952 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 18:44:34,953 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 18:44:34,953 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 18:44:37,776 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 18:44:37,783 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 18:44:37,783 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 18:44:37,784 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669038277.784134, 'type': 'status', 'user': {'account_name': 'U2', 'status': 'Я онлайн!'}}
+2022-11-21 18:44:37,784 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 18:44:37,785 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:38,285 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:38,285 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:38,285 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 18:44:38,285 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 18:44:38,285 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 18:44:38,286 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 18:44:40,608 INFO   my_client Function get_username() was called from function Client()
+2022-11-21 18:44:40,615 INFO   my_client Function arg_parser() was called from function start()
+2022-11-21 18:44:40,615 INFO   my_client App starts at 127.0.0.1 7777
+2022-11-21 18:44:40,616 DEBUG  my_client Presence message created: {'action': 'presence', 'time': 1669038280.616462, 'type': 'status', 'user': {'account_name': 'U3', 'status': 'Я онлайн!'}}
+2022-11-21 18:44:40,616 INFO   my_client Function create_presence() was called from function start()
+2022-11-21 18:44:40,616 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:41,116 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:41,117 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:41,117 INFO   my_client Function send_message() was called from function proccess_client_message()
+2022-11-21 18:44:41,117 DEBUG  my_client Proccessing server message: {'response': 200}
+2022-11-21 18:44:41,117 INFO   my_client Function proccess_response() was called from function start()
+2022-11-21 18:44:41,117 INFO   my_client Established connection with server. Server responce: 200: OK
+2022-11-21 18:44:43,390 DEBUG  my_client Message created: {'action': 'message', 'time': 1669038283.3903546, 'account_name': 'U3', 'destination': None, 'message_text': 'sFG'}
+2022-11-21 18:44:43,443 INFO   my_client Function create_message() was called from function send()
+2022-11-21 18:44:43,444 INFO   my_client Function send_message() was called from function send()
+2022-11-21 18:44:43,618 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:43,619 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:43,620 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:43,620 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:43,620 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:43,620 INFO   my_client Message recieved from U3:sFG
+2022-11-21 18:44:43,620 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:43,621 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:43,621 INFO   my_client Message recieved from U3:sFG
+2022-11-21 18:44:43,621 INFO   my_client Message recieved from U3:sFG
+2022-11-21 18:44:43,621 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:43,621 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:43,621 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:46,518 DEBUG  my_client Message created: {'action': 'message', 'time': 1669038286.5185094, 'account_name': 'U3', 'destination': None, 'message_text': 'Hello there'}
+2022-11-21 18:44:46,519 INFO   my_client Function create_message() was called from function send()
+2022-11-21 18:44:46,519 INFO   my_client Function send_message() was called from function send()
+2022-11-21 18:44:46,621 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:46,622 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:46,622 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:46,622 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:46,622 INFO   my_client Message recieved from U3:Hello there
+2022-11-21 18:44:46,622 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:46,622 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:46,623 INFO   my_client Message recieved from U3:Hello there
+2022-11-21 18:44:46,623 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:46,623 INFO   my_client Message recieved from U3:Hello there
+2022-11-21 18:44:46,623 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:46,623 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:46,623 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:49,718 DEBUG  my_client Message created: {'action': 'message', 'time': 1669038289.7184312, 'account_name': 'U2', 'destination': None, 'message_text': 'SDg'}
+2022-11-21 18:44:49,718 INFO   my_client Function create_message() was called from function send()
+2022-11-21 18:44:49,719 INFO   my_client Function send_message() was called from function send()
+2022-11-21 18:44:50,124 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:50,125 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:50,125 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:50,125 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:50,125 INFO   my_client Message recieved from U2:SDg
+2022-11-21 18:44:50,125 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:50,125 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:50,126 INFO   my_client Message recieved from U2:SDg
+2022-11-21 18:44:50,126 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:50,126 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:50,126 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:50,127 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:58,614 DEBUG  my_client Message created: {'action': 'message', 'time': 1669038298.6139288, 'account_name': 'U2', 'destination': None, 'message_text': '/p U1 GG'}
+2022-11-21 18:44:58,614 INFO   my_client Function create_message() was called from function send()
+2022-11-21 18:44:58,615 INFO   my_client Function send_message() was called from function send()
+2022-11-21 18:44:58,629 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:44:58,630 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:58,630 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:58,630 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:58,630 INFO   my_client Message recieved from U2:/p U1 GG
+2022-11-21 18:44:58,631 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:58,631 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:44:58,631 INFO   my_client Message recieved from U2:/p U1 GG
+2022-11-21 18:44:58,631 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:44:58,631 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:58,631 INFO   my_client Message recieved from U2:/p U1 GG
+2022-11-21 18:44:58,631 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:44:58,632 INFO   my_client Function message_from_server() was called from function listen()
+2022-11-21 18:45:08,078 DEBUG  my_client Message created: {'action': 'message', 'time': 1669038308.0784745, 'account_name': 'U2', 'destination': 'U1', 'message_text': 'GG'}
+2022-11-21 18:45:08,078 INFO   my_client Function create_message() was called from function send()
+2022-11-21 18:45:08,079 INFO   my_client Function send_message() was called from function send()
+2022-11-21 18:45:08,136 INFO   my_client Function get_message() was called from function start()
+2022-11-21 18:45:08,136 INFO   my_client Function send_message() was called from function start()
+2022-11-21 18:45:08,137 INFO   my_client Function get_message() was called from function listen()
+2022-11-21 18:45:08,137 INFO   my_client Message recieved from U2:GG
+2022-11-21 18:45:08,138 INFO   my_client Function message_from_server() was called from function listen()
