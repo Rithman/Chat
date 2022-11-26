@@ -5,14 +5,91 @@ import select
 import argparse
 import time
 import log.server_log_config
+import ipaddress
+import dis
 
 from socket import socket, AF_INET, SOCK_STREAM
 from common.utils import send_message, get_message
 from log.server_log_config import FuncCallLogger
 
-class Server:
+
+
+class ServerVerifier(type):
+    def __init__(self, name, bases, dct):
+
+        globals = []
+        methods = []
+
+        for func in dct:
+            try:
+                res = dis.get_instructions(dct[func])
+            except TypeError:
+                pass
+            else:
+                for i in res:
+                    if i.opname == 'LOAD_GLOBAL':
+                        if i.argval not in globals:
+                            globals.append(i.argval)
+                    elif i.opname == 'LOAD_METHOD':
+                        if i.argval not in methods:
+                            methods.append(i.argval)
+
+        if 'connect' in methods:
+            raise TypeError("Invalid CONNECT method used")
+        if not ('SOCK_STREAM' in globals and 'AF_INET' in globals):
+            raise TypeError("Invalid socket initialization")
+        super().__init__(name, bases, dct)
+
+
+class ServSocketDescriptor:
+    def __set_name__(self, owner, name):
+        self.name = '_' + name
+
+    def __get__(self, instance, owner):
+        return instance.__dict__[self.name]
+
+    def __set__(self, instance, value):
+        if self.name == "_s_address":
+            try:
+                addr = ipaddress.ip_address(value)
+            except:
+                raise ValueError(f"Invalid ip-address: {value}")
+            else: instance.__dict__[self.name] = value
+        elif self.name == "_s_port":
+            if not 1024 < value < 65536:
+                raise ValueError(f"IndexError. Invalid port: {value}")
+            else:
+                instance.__dict__[self.name] = value
+
+
+class ServSocket:
+    s_address = ServSocketDescriptor() 
+    s_port = ServSocketDescriptor()
+
+    @FuncCallLogger()
+    def __init__(self, addr, port):
+        self.s_address = addr
+        self.s_port = port
+
+    def get_addr(self):
+        return self.s_address, self.s_port
+
+class Server(metaclass=ServerVerifier):
     logger = logging.getLogger("my_server")
     clients_id_dict = {}
+
+
+    @FuncCallLogger()
+    def arg_parser(self):
+        parser = argparse.ArgumentParser()
+        parser.add_argument("-p", default=7777, type=int, nargs="?")
+        parser.add_argument("-a", default="0.0.0.0", nargs="?")
+        namespace = parser.parse_args(sys.argv[1:])
+        listen_port = namespace.p
+        listen_address = namespace.a
+
+        return listen_address, listen_port
+
 
     @FuncCallLogger()
     def proccess_client_message(self, message, messages_list, client):
@@ -29,29 +106,15 @@ class Server:
             return
 
     
-    @FuncCallLogger()
-    def arg_parser(self):
-        parser = argparse.ArgumentParser()
-        parser.add_argument("-p", default=7777, type=int, nargs="?")
-        parser.add_argument("-a", default="0.0.0.0", nargs="?")
-        namespace = parser.parse_args(sys.argv[1:])
-        listen_port = namespace.p
-        listen_address = namespace.a
-
-        if not 1024 < listen_port < 65536:
-            self.logger.critical(f"IndexError. Invalid port {listen_port} was given")
-            sys.exit(1)
-
-        return listen_address, listen_port
-
-
     def start(self):
-        s_address, s_port = self.arg_parser()
+        sock = ServSocket(self.arg_parser()[0], self.arg_parser()[1])
+        s_address, s_port = ServSocket.get_addr(sock)
         self.logger.info(f"App starts at {s_address} {s_port}")
         s = socket(AF_INET, SOCK_STREAM)
         s.bind((s_address, s_port))
         s.settimeout(0.5)
         s.listen(5)
+        print(f"Server {s_address} {s_port} starts")
 
         clients, messages = [], [] 
 

@@ -1,0 +1,36 @@
+2022-11-26 21:41:53,591 INFO   my_server Function arg_parser() was called from function start()
+2022-11-26 21:41:53,592 INFO   my_server Function arg_parser() was called from function start()
+2022-11-26 21:41:53,592 INFO   my_server Function __init__() was called from function start()
+2022-11-26 21:41:53,593 INFO   my_server App starts at 127.0.0.1 8888
+2022-11-26 21:42:33,384 INFO   my_server Connection established with ('127.0.0.1', 50900)
+2022-11-26 21:42:33,884 DEBUG  my_server Message proccesing: {'action': 'presence', 'time': 1669480953.3844285, 'type': 'status', 'user': {'account_name': 'fd', 'status': 'Я онлайн!'}}
+2022-11-26 21:42:33,885 INFO   my_server Function proccess_client_message() was called from function start()
+2022-11-26 21:42:36,488 INFO   my_server Connection established with ('127.0.0.1', 50901)
+2022-11-26 21:42:36,988 DEBUG  my_server Message proccesing: {'action': 'presence', 'time': 1669480956.4877112, 'type': 'status', 'user': {'account_name': 'dw', 'status': 'Я онлайн!'}}
+2022-11-26 21:42:36,989 INFO   my_server Function proccess_client_message() was called from function start()
+2022-11-26 21:42:43,491 DEBUG  my_server Message proccesing: {'action': 'message', 'time': 1669480963.145654, 'account_name': 'dw', 'destination': None, 'message_text': 'sdgs'}
+2022-11-26 21:42:43,492 INFO   my_server Function proccess_client_message() was called from function start()
+2022-11-26 21:42:55,498 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:55,998 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:56,498 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:56,999 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:57,499 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:58,000 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:58,500 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:58,500 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:42:59,000 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:59,000 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:42:59,500 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:42:59,500 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:43:00,001 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:43:00,001 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:43:00,501 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:43:00,501 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:43:01,001 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:43:01,001 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:43:01,501 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:43:01,501 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:43:02,001 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:43:02,001 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
+2022-11-26 21:43:02,502 INFO   my_server Client ('127.0.0.1', 50900) disconected from server
+2022-11-26 21:43:02,502 INFO   my_server Client ('127.0.0.1', 50901) disconected from server
