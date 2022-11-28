@@ -4,18 +4,43 @@ import sys
 import logging
 import argparse
 import log.client_log_config
+import dis
 
 from threading import Thread
 from log.client_log_config import FuncCallLogger
 from common.utils import send_message, get_message
 
 
-class Client:
+class ClientVerifier(type):
+    def __init__(self, name, bases, dct):
+
+        globals = []
+        methods = []
+
+        for func in dct:
+            try:
+                res = dis.get_instructions(dct[func])
+            except TypeError:
+                pass
+            else:
+                for i in res:
+                    if i.opname == 'LOAD_GLOBAL':
+                        if i.argval not in globals:
+                            globals.append(i.argval)
+                    elif i.opname == 'LOAD_METHOD':
+                        if i.argval not in methods:
+                            methods.append(i.argval)
+
+        if 'accept' in methods or 'listen' in methods:
+            raise TypeError("Invalid 'accept' or 'listen' method used")
+        if not ('SOCK_STREAM' in globals and 'AF_INET' in globals):
+            raise TypeError("Invalid socket initialization")
+        
+        super().__init__(name, bases, dct)
+
+class Client(metaclass=ClientVerifier):
     logger = logging.getLogger("my_client")
-
     USER = ""
-    HELP = "/pm {username} - Private message\n/q - Quit\n/help - Help"
-
 
     @FuncCallLogger()
     def get_username():
@@ -48,7 +73,7 @@ class Client:
             destination = message.split()[1]
             message = " ".join(message.split()[2:])
         elif message == "/help":
-            print(self.HELP)
+            print("/pm {username} - Private message\n/q - Quit\n/help - Help")
             return
         message_dict = {
             "action": "message",
@@ -70,7 +95,7 @@ class Client:
             "user":
                     {
                 "account_name": account_name,
-                    "status": "Я онлайн!"
+                    "status": f"Я онлайн!"
             }
         }
         self.logger.debug(f"Presence message created: {presence_message}")
@@ -107,7 +132,7 @@ class Client:
 
     def start(self):
         username = USER
-        print(self.HELP)
+        print("/pm {username} - Private message\n/q - Quit\n/help - Help")
         s_address, s_port = self.arg_parser()
         self.logger.info(f"App starts at {s_address} {s_port}")
 

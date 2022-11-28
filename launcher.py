@@ -23,7 +23,7 @@ def arg_parser():
     
 
 def start(s_address, s_port, num_of_clietns):
-    path = f"{os.path.dirname(os.getcwd())}\\async_client.py"
+    path = f"{os.getcwd()}\\async_client.py"
     for client in range(num_of_clietns):
         subprocess.Popen(["python", path, str(s_address), str(s_port)], creationflags=subprocess.CREATE_NEW_CONSOLE)
             
@@ -31,5 +31,6 @@ def start(s_address, s_port, num_of_clietns):
 if __name__ == "__main__":
     addr, port, num = arg_parser()
     start(addr, port, num)
+
 
 
