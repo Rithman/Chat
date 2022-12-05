@@ -1,36 +1,29 @@
+from common.variables import *
+from errors import IncorrectDataRecivedError, NonDictInputError
 import json
-
-from log.client_log_config import FuncCallLogger
-
-
-@FuncCallLogger()
-def send_message(sock, message):
-    """
-    Принимает, кодирует и отправляет словарь.
-    :param sock:
-    :param message:
-    :return:
-    """
-    if message == None:
-        return
-    if not isinstance(message, dict):
-        raise ValueError
-    js_message = json.dumps(message)
-    encoded_message = js_message.encode("utf-8")
-    sock.send(encoded_message)
+import sys
+sys.path.append('../')
+from decos import log
 
 
-@FuncCallLogger()
+@log
 def get_message(client):
-    """
-    Принимает сообщение в виде байтов, декодирует, проверяет его и возвращает словарь.
-    :param client:
-    :return:
-    """
-    encoded_response = client.recv(1024)
+    encoded_response = client.recv(MAX_PACKAGE_LENGTH)
     if isinstance(encoded_response, bytes):
-        response = json.loads(encoded_response.decode('utf-8'))
+        json_response = encoded_response.decode(ENCODING)
+        response = json.loads(json_response)
         if isinstance(response, dict):
             return response
-        raise ValueError
-    raise ValueError
+        else:
+            raise IncorrectDataRecivedError
+    else:
+        raise IncorrectDataRecivedError
+
+
+@log
+def send_message(sock, message):
+    if not isinstance(message, dict):
+        raise NonDictInputError
+    js_message = json.dumps(message)
+    encoded_message = js_message.encode(ENCODING)
+    sock.send(encoded_message)
