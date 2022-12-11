@@ -6,6 +6,8 @@ from PyQt5.QtCore import Qt
 import os
 
 
+os.chdir(os.path.dirname(os.path.realpath(__file__)))
+
 def gui_create_model(database):
     list_users = database.active_users_list()
     list = QStandardItemModel()
